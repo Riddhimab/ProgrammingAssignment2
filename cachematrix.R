@@ -35,8 +35,8 @@ cacheSolve <- function(x, ...) {
         #Gets data from cache
         matrixdata<-x$getm()
         inverse<-solve(matrixdata,...)
-        x$setinverse(inverseofm)
-        return(inverseofm)
+        x$setinverse(inverse)
+        return(inverse)
         #Assuming that the matrix is invertible(as stated in the question)
         #this function finds the inverse of the matrix
 }
